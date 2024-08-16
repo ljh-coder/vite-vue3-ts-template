@@ -1,0 +1,100 @@
+@com_font_family: Comic Sans MS, Comic Sans, cursive, Arial, sans-serif;
+
+.el-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    border-radius: 0.75rem;
+    padding: 2rem 2rem 1rem 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    user-select: none;
+    overflow: hidden;
+    font-family: @com_font_family;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    font-family: @com_font_family;
+}
+
+// 表单验证提示
+::v-deep .el-form-item__error {
+    // text-indent: 1rem;
+    text-align: left;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    font-family: @com_font_family;
+}
+
+.input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.input-group label {
+    display: block;
+    color: #313131;
+    margin-bottom: 4px;
+    text-indent: 1rem;
+    text-align: left;
+    font-family: @com_font_family;
+}
+
+.input-group .el-input {
+    width: 90%;
+    height: 2.4rem;
+    outline: 0;
+    margin: 0 auto;
+    // 边框颜色
+    --el-input-border-color: rgba(55, 65, 81);
+    // 背景颜色
+    // --el-input-bg-color: rgba(17, 24, 39, 1);
+    // 获取焦点后的边框颜色
+    --el-input-focus-border-color: #aaa;
+    // 鼠标悬停边框颜色
+    --el-input-hover-border-color: rgba(55, 65, 81);
+    // 边框圆角
+    --el-input-border-radius: 4px;
+}
+
+::v-deep .el-input .el-input__inner {
+    font-family: @com_font_family;
+}
+
+
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #212121;
+    border: none;
+    width: 80%;
+    height: 2.8125rem;
+    font-size: inherit;
+    margin:30px auto 0 auto;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+    font-family: @com_font_family;
+    --el-button-active-border-color: #212121;
+
+    &:hover {
+        background-color: #313131;
+    }
+}
+
+.signup {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(156, 163, 175, 1);
+    font-family: @com_font_family;
+}

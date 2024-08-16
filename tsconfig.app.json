@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -9,7 +11,9 @@
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
     "isolatedModules": true,
+    // 解决不同文件相同变量名称定义报错
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "preserve",
@@ -18,7 +22,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    // -------------
+    // 基础路径
+    "baseUrl": ".",
+    // 路径别名配置
+    "paths": { "@/*": ["src/*"] },
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
