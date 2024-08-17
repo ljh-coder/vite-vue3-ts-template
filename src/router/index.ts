@@ -12,11 +12,11 @@ const routes: Array<RouteRecordRaw> = [
     },
     {
         path: '/login',
-        component: () => import('@/views/login/Login.vue'),
+        component: () => import('@/views/login/Login.vue')
     },
     {
         path: '/register',
-        component: () => import('@/views/login/Register.vue'),
+        component: () => import('@/views/login/Register.vue')
     },
     {
         path: '/setting',

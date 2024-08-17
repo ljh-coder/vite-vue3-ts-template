@@ -31,8 +31,4 @@ watch(() => route.path,() => {
 #navigation {
     display: none;
 }
-
-// [v-cloak] {
-//     display: none;
-// }
 </style>
